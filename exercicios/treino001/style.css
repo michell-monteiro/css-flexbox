@@ -1,9 +1,18 @@
 @charset "UTF-8";
 
-div.blocklv {
+div.container {
     width: 400px;
     margin: 0 auto;
     background-color: blueviolet;
     text-align: center;
+    border: 1px solid #ccc;
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    background-color: blueviolet;
     border: 1px solid #ccc;
 }
