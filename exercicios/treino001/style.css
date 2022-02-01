@@ -1,2 +1,9 @@
 @charset "UTF-8";
 
+div.blocklv {
+    width: 400px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    text-align: center;
+    border: 1px solid #ccc;
+}
