@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 div.container {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     background-color: blueviolet;
     text-align: center;
@@ -13,6 +13,16 @@ div.container {
 }
 
 .item {
-    background-color: blueviolet;
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+section {
     border: 1px solid #ccc;
+    width: 400px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
