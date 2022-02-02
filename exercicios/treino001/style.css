@@ -11,7 +11,7 @@ div.container {
 .flex {
     display: flex;
 }
-
+/* Classe item */
 .item {
 	margin: 5px;
 	text-align: center;
