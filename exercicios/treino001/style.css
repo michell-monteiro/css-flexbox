@@ -7,7 +7,7 @@ div.container {
     text-align: center;
     border: 1px solid #ccc;
 }
-
+/* Flex */
 .flex {
     display: flex;
 }
