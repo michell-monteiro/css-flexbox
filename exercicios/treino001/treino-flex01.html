@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1 {
+            text-align: center;
+        }
         div {
             background-color: tomato;
+            text-align: center;
+            border: 1px solid white;
+            width: 400px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <h1>Sem flex</h1>
+    <p>Cada item ocupa a largura total da tela. Isso acontece porque uma div é naturalmente um elemento "block-in-level"</p>
     <div class="container">1</div>
     <div class="container">2</div>
     <div class="container">3</div>
     <div class="container">4</div>
+
+    <h1>Com fl</h1>
+    <div></div>
 </body>
 </html>
