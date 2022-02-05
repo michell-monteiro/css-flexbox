@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            max-width: 250px;
+            border: 1px solid #ccc;
+            margin: auto;
+            display: flex;
+        }
+        .nowwrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+        .item {
+            background-color: tomato;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Wrap</h1>
+    <p>Quebra a linha quando o conteúdo não caber mais no container.</p>
+
+    <h1>Sem flex-wrap</h1>
+    <p>Note que por padrão, o conteúdo quebra o container.</p>
+    <section class="container nowrap">
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+    </section>
+
+    <h1>Com Flex-wrap: wrap</h1>
+    <section class="container wrap">
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+    </section>
+
+    <h1>Com Flex-wrap: wrap-reverse</h1>
+    <section class="container wrap-reverse">
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+        <div class="item">Christofferson</div>
+    </section>
+</body>
+</html>
