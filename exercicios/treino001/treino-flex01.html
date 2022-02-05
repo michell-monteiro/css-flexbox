@@ -9,24 +9,34 @@
         h1 {
             text-align: center;
         }
-        div {
+        p {
+            text-align: center;
+        }
+        .container {
+            border: 1px solid #ccc;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+        }
+        .item {
             background-color: tomato;
             text-align: center;
             border: 1px solid white;
-            width: 400px;
-            margin: auto;
         }
     </style>
 </head>
 <body>
     <h1>Sem flex</h1>
-    <p>Cada item ocupa a largura total da tela. Isso acontece porque uma div é naturalmente um elemento "block-in-level"</p>
-    <div class="container">1</div>
-    <div class="container">2</div>
-    <div class="container">3</div>
-    <div class="container">4</div>
+    <p>Cada item ocupa a largura total da tela. Isso acontece porque uma div é naturalmente um elemento "block-in-level".</p>
+    <section class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
 
-    <h1>Com fl</h1>
-    <div></div>
+    <h1>Com flex</h1>
 </body>
 </html>
