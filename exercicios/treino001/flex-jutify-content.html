@@ -28,7 +28,15 @@
         .space-between {
             justify-content: space-between;
         }
+        .space-around {
+            justify-content: space-around;
+        }
         .item {
+            background-color: tomato;
+            border: 1px solid #ccc;
+        }
+        #item-flex {
+            flex: 1;
             background-color: tomato;
             border: 1px solid #ccc;
         }
@@ -69,6 +77,24 @@
         <div class="item">Teste 2</div>
         <div class="item">3</div>
         <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: space-around;</h1>
+    <p>Alinha os itens no centro do container</p>
+    <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+    
+    <h1>justify-content: space-around;</h1>
+    <p>Alinha os itens no centro do container</p>
+    <section class="container space-around">
+        <div id="item-flex">1</div>
+        <div id="item-flex">Teste 2</div>
+        <div id="item-flex">3</div>
+        <div id="item-flex">4</div>
     </section>
 </body>
 </html>
