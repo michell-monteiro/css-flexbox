@@ -39,7 +39,8 @@
             flex: 1;
         }
         .column {
-            
+            flex-direction: column;
+            min-height: 200px;
         }
     </style>
 </head>
@@ -72,7 +73,6 @@
     </section>
 
     <h1>justify-content: space-between;</h1>
-    <p>Alinha os itens no centro do container</p>
     <section class="container space-between">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
@@ -81,7 +81,6 @@
     </section>
 
     <h1>justify-content: space-around;</h1>
-    <p>Alinha os itens no centro do container</p>
     <section class="container space-around">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
@@ -89,13 +88,38 @@
         <div class="item">4</div>
     </section>
     
-    <h1>justify-content: space-around;</h1>
-    <p>Alinha os itens no centro do container</p>
+    <h1>justify-content: space-around; //itens com flex: 1;</h1>
     <section class="container space-around">
         <div class="item flex">1</div>
         <div class="item flex">Teste 2</div>
         <div class="item flex">3</div>
         <div class="item flex">4</div>
+    </section>
+
+    <h1>justify-content: flex-start;</h1>
+    <p>Alinha os itens no início do container</p>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: flex-end;</h1>
+    <p>Alinha os itens no final do container</p>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: space-around; //flex-direction: column;</h1>
+    <section class="container space-around column">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
     </section>
 </body>
 </html>
