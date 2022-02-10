@@ -16,16 +16,59 @@
             width: 400px;
             margin: auto;
         }
+        .flex-start {
+            justify-content: flex-start;
+        }
+        .flex-end {
+            justify-content: flex-end;
+        }
+        .center {
+            justify-content: center;
+        }
+        .space-between {
+            justify-content: space-between;
+        }
+        .item {
+            background-color: tomato;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
-    <h1>justify-content: flex-start</h1>
+    <h1>justify-content: flex-start;</h1>
     <p>Alinha os itens no início do container</p>
-    <section class="container">
-        <div>1</div>
-        <div>Teste 2</div>
-        <div>3</div>
-        <div>4</div>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: flex-end;</h1>
+    <p>Alinha os itens no final do container</p>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: center;</h1>
+    <p>Alinha os itens no centro do container</p>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>justify-content: space-between;</h1>
+    <p>Alinha os itens no centro do container</p>
+    <section class="container space-between">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
     </section>
 </body>
 </html>
