@@ -33,14 +33,20 @@
         .center {
             align-items: center;
         }
-        .justify-center {
-            justify-content: center;
-        }
         .baseline {
             align-items: baseline;
         }
         .column {
             flex-direction: column;
+        }
+        .alinhamento-central {
+	        height: 400px;
+	        justify-content: center;
+	        align-items: center;
+        }
+        .alinhamento-central .item {
+	        flex: 0;
+	        padding: 10px;
         }
     </style>
 </head>
@@ -126,7 +132,7 @@
     </section>
 
     <h1>align-items: center; e justify-content: center;</h1>
-    <section class="container center justify-center">
+    <section class="container alinhamento-central">
         <div class="item">Este item está verticalmente alinhado ao centro. Por quê? É apenas uma forma de testar a propriedade align-items interagida com o justify-content: center;</div>
     </section>
 </body>
