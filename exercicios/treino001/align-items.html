@@ -11,7 +11,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .container {
-            width: 400px;
+            max-width: 200px;
             margin: auto;
             border: 1px solid #ccc;
             display: flex;
@@ -23,11 +23,44 @@
         .stretch {
             align-items: stretch;
         }
+        .start {
+            align-items: flex-start;
+        }
+        .end {
+            align-items: flex-end;
+        }
+        .center {
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <h1>align-items: stretch;</h1>
     <section class="container stretch">
+        <div class="item">1</div>
+        <div class="item">Teste do item 1</div>
+        <div class="item">Teste 3 do item agora mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: flex-start;</h1>
+    <section class="container start">
+        <div class="item">1</div>
+        <div class="item">Teste do item 1</div>
+        <div class="item">Teste 3 do item agora mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: flex-end;</h1>
+    <section class="container end">
+        <div class="item">1</div>
+        <div class="item">Teste do item 1</div>
+        <div class="item">Teste 3 do item agora mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: center;</h1>
+    <section class="container center">
         <div class="item">1</div>
         <div class="item">Teste do item 1</div>
         <div class="item">Teste 3 do item agora mesmo</div>
