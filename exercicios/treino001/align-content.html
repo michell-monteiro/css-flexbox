@@ -13,23 +13,30 @@
             display: flex;
             flex-wrap: wrap;
             border: 1px solid #ccc;
-            max-width: 300px;
-            height: 150px;
+            max-width: 200px;
+            height: 300px;
             margin: auto;
+        }
+        .item {
+            background-color: tomato;
+            border: 1px solid #ccc;
+        }
+        .stretch {
+            align-content: stretch;
         }
     </style>
 </head>
 <body>
     <h1>align-content: stretch;</h1>
-    <section class="container">
-        <div>TestandoPalavra1</div>
-        <div>Teste 2 do Item</div>
-        <div>Teste 3 do Item Agora Mesmo</div>
-        <div>Teste 4</div>
-        <div>Teste 5</div>
-        <div>Teste 6</div>
-        <div>Teste 7</div>
-        <div>Teste 8</div>
+    <section class="container stretch">
+        <div class="item">TestandoPalavra1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+        <div class="item">Teste 8</div>
     </section>
 </body>
 </html>
