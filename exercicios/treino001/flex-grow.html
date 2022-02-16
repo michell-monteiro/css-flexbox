@@ -20,14 +20,40 @@
             background-color: tomato;
             border: 1px solid #ccc;
         }
+        .grow0 {
+            flex-grow: 0;
+        }
+        .grow1 {
+            flex-grow: 1;
+        }
+        .grow2 {
+            flex-grow: 2;
+        }
     </style>
 </head>
 <body>
+    <h1>flex-grow</h1>
+    <p>A propriedade flex-grow manipula o crescimento de um item flex de maneira proporcional. Quando atribuimos o valor "0" nessa propriedade, todos os itens crescerão igualmente. Contudo, se houver outro item com um valor diferente, o crescimento será proporcional ao valor escolhido. Exemplo: item1 = flex-grow: 1 // item2 = flex-grow 2 ----> O item 2 vai crescer duas vezes mais que o item 1</p>
+    
     <h1>flex-grow: 0;</h1>
     <section class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+        <div class="item grow0">1</div>
+        <div class="item grow0">2</div>
+        <div class="item grow0">3</div>
+    </section>
+
+    <h1>flex-grow: 1;</h1>
+    <section class="container">
+        <div class="item grow1">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow1">3</div>
+    </section>
+
+    <h1>flex-grow: 2;</h1>
+    <section class="container">
+        <div class="item grow2">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow2">3</div>
     </section>
 </body>
 </html>
