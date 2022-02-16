@@ -8,7 +8,23 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
+        .basis-auto {
+            flex-grow: 1;
+            flex-basis: auto;
+        }
+        /* Duas vezes mais espaço que basis-auto */
+        .basis-auto-grow-2 {
+            flex-grow: 2;
+            flex-basis: auto;
+        }
+        /* Ocupa o mesmo espaço que basis-auto, com uma pequena diferença que é o seu início em 60px */
+        .basis-auto-width {
+        	flex-grow: 1;
+	        flex-basis: auto;
+	        width: 60px;
+        }       
         .container {
             max-width: 300px;
             margin: 0 auto;
