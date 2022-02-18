@@ -6,36 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex-shrink</title>
     <style> 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .container {
-            border: 1px solid #ccc;
-            max-width: 250px;
-            display: flex;
-            margin: auto;
-        }
-        .item {
-            background-color: tomato;
-            border: 1px solid #ccc;
-        }
-        .shrink1 {
-            flex-shrink: 1;
+        .shrink-1 {
             flex-grow: 1;
-        }
-        .shrink0 {
-            flex-basis: 300px;
-            flex-shrink: 0;
-        }
-        .shrinkN {
-            flex-shrink: 3;
-        }
-        .shrink-3 {
-	        flex-grow: 1;
-	        flex-shrink: 3;
+            flex-shrink: 1;
         }
 
+        .shrink-3 {
+            flex-grow: 1;
+            flex-shrink: 3;
+        }
+
+        .shrink-1-basis {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 150px;
+        }
+
+        .shrink-0-basis {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 150px;
+        }
+
+        .shrink-3-basis {
+            flex-grow: 1;
+            flex-shrink: 3;
+            flex-basis: 150px;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+
+        .item {
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        /* Flex Container */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid #ccc;
+        }
+        /* Flex Item */
+
+
+        h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        body {
+            font-family: monospace;
+            color: #333;
+        }
     </style>
 </head>
 <body>
