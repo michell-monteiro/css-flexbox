@@ -19,7 +19,6 @@
         .item {
             background-color: tomato;
             border: 1px solid #ccc;
-            flex-grow: 1;
         }
         .order1 {
             order: 1;
@@ -33,6 +32,12 @@
         .order4 {
             order: 4;
         }
+        .order-1 {
+            order: -1;
+        }
+        .grow {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +45,18 @@
     <li>Troca ordem dos elementos listados, começando dos menores primeiro para os maiores por último.</li>
     <h1>order: misturados;</h1>
     <section class="container">
-        <div class="order4 item">1</div>
-        <div class="order3 item">2</div>
+        <div class="order1 item">1</div>
+        <div class="order4 item">2</div>
         <div class="order2 item">3</div>
-        <div class="order1 item">4</div>
+        <div class="order3 item">4</div>
+    </section>
+
+    <h1>order: negativo; / flex-grow</h1>
+    <section class="container">
+        <div class="order1 item grow">1</div>
+        <div class="order-1 item grow">2</div>
+        <div class="order3 item grow">3</div>
+        <div class="order2 item grow">4</div>
     </section>
 </body>
 </html>
