@@ -13,17 +13,37 @@
         .container {
             display: flex;
             border: 1px solid #ccc;
-            margin: auto;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .item {
+            background-color: tomato;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+        }
+        .order1 {
+            order: 1;
+        }
+        .order2 {
+            order: 2;
+        }
+        .order3 {
+            order: 3;
+        }
+        .order4 {
+            order: 4;
         }
     </style>
 </head>
 <body>
+    <h1>Order</h1>
+    <li>Troca ordem dos elementos listados, começando dos menores primeiro para os maiores por último.</li>
     <h1>order: misturados;</h1>
-    <section>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+    <section class="container">
+        <div class="order4 item">1</div>
+        <div class="order3 item">2</div>
+        <div class="order2 item">3</div>
+        <div class="order1 item">4</div>
     </section>
 </body>
 </html>
