@@ -13,7 +13,7 @@
         
         .container {
             display: flex;
-            max-width: 200px;
+            max-width: 400px;
             border: 1px solid #ccc;
             margin: 0 auto;
         }
@@ -26,15 +26,19 @@
             text-align: center;
             font-size: 1.5em;
         }
+        
+        .flex-start {
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
     <h1>align-self: multiplos;</h1>
-    <section>
-        <div>1</div>
-        <div>Teste 2 do item</div>
-        <div>Teste 3 do item agora sendo feito agora mesmo</div>
-        <div>Teste 4</div>
+    <section class="container">
+        <div class="item flex-start">1</div>
+        <div class="item flex-start">Teste 2 do item</div>
+        <div class="item flex-start">Teste 3 do item agora sendo feito agora mesmo</div>
+        <div class="item flex-start">Teste 4</div>
     </section>
 </body>
 </html>
