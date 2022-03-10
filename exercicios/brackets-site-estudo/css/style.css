@@ -18,11 +18,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+/* Superinfo */
+
+.superinfo-bg {
+    background: #122ab2;
+    color: white;
 }
