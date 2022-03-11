@@ -77,4 +77,16 @@ img {
 
 .menu-nav ul {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    transition-duration: 0.5s;
+    color: #122ab2;
 }
