@@ -149,10 +149,11 @@ img {
 .produtos-container {
     display: flex;
     flex-wrap: wrap;
-
+    align-items: end;
 }
 
 .produtos-item {
+    /* Uma forma que substitui declarar um flex-basis de 175px é definir um min-width de 175px */
     flex: 1 1 175px;
     margin: 10px;
 }
