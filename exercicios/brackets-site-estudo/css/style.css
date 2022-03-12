@@ -330,3 +330,24 @@ img {
     flex: 1 1 260px;
     margin: 0 10px;
 }
+
+.newsletter-info h1 {
+    font-size: 3em;
+    color: #a4a4a4;
+}
+
+.newsletter-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    flex: 2 1 260px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
