@@ -53,6 +53,8 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    text-transform: uppercase;
+    display: flex;
 }
 
 .menu-itens ul{
@@ -67,7 +69,8 @@ ul {
 }
 
 .menu-itens a:hover {
-    border-bottom: 2px solid #00A884;
+    border-bottom: 3px solid #00A884;
     color: #00A884;
+    font-weight: bold;
     /* transition-duration: 0.2s; transition está bugando a linha*/
 }
