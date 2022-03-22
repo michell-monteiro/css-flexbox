@@ -80,10 +80,21 @@ ul {
     font-weight: bold;
     /* transition-duration: 0.2s; transition está bugando a linha*/
 }
-
 /* conversas */
 
 .main-bg {
     background-color: #111B21;
-    height: 300px;
+}
+
+.conversas {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.jhon {
+    
 }
