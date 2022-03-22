@@ -55,7 +55,7 @@ ul {
 .menu{
     max-width: 960px;
     margin: 0 auto;
-    /* padding: 15px 0; */
+    padding: 15px 0;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -63,16 +63,16 @@ ul {
     display: flex;
 }
 
-.menu-itens ul{
+.menu-itens{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.menu-itens a {
+/* .menu-itens a {
     font-size: 1em;
-    display: block;
     padding: 10px;
-}
+} */
 
 .menu-itens a:hover {
     border-bottom: 3px solid #00A884;
