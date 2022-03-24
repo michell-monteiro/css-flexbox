@@ -63,18 +63,12 @@ ul {
     display: flex;
 }
 
-.menu-itens{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 /* .menu-itens a {
     font-size: 1em;
     padding: 10px;
 } */
 
-.menu-itens a:hover {
+.menu div:hover {
     border-bottom: 3px solid #00A884;
     color: #00A884;
     font-weight: bold;
